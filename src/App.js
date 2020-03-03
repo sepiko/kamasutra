@@ -4,21 +4,46 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='app-wrapper'>
+      <header className='header'>
+        <img src="http://logok.org/wp-content/uploads/2014/05/Total-logo-earth-880x660.png" />
       </header>
+      <nav className='nav'>
+        <div>
+          <a>Profile</a>
+        </div>
+        <div>
+          <a>Messages</a>
+        </div>
+        <div>
+          <a>News</a>
+        </div>
+        <div>
+          <a>Music</a>
+        </div>
+        <div>
+          <a>Settings</a>
+        </div>
+      </nav>
+      <div className='content'>
+        <div>
+          <img src='https://www.dw.com/image/48396304_303.jpg' />
+        </div>
+        <div>
+          ava + description
+        </div>
+        <div>
+          My posts
+          <div>
+            new post
+          </div>
+          <dix>
+            <div>post1</div>
+            <div>post2</div>
+          </dix>
+        </div>
+      </div>
+
     </div>
   );
 }
