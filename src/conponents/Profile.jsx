@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Profile.css';
+import s from './Profile.module.css';
 
 export default class Profile extends Component {
     render() {
         return (
-            <div className='content'>
+            <div className={s.content}>
             <div>
               <img src='https://www.dw.com/image/48396304_303.jpg' />
             </div>
@@ -17,8 +17,8 @@ export default class Profile extends Component {
                 new post
               </div>
               <dix>
-                <div>post1</div>
-                <div>post2</div>
+                <div className={s.item}>post1</div>
+                <div className={s.item}>post2</div>
               </dix>
             </div>
           </div>
