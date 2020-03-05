@@ -1,3 +1,9 @@
 {
-    "editor.autoSave": "on"
+    "auto-rename-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "php",
+        "jsx",
+        "javascript"
+    ]
 }
