@@ -17,13 +17,11 @@ export default class MyPosts extends Component {
                     <button>Add</button>
                 </div>
                 <div className={s.posts}>
-                    <Post />
-                    <Post />
-                    <Post />
-                    <Post />
-                    <Post />
+                    <Post message='Hi, my name is Bob'/>
+                    <Post message='I invite you to the party'/>
                 </div>
             </div>
         )
     }
 }
+
