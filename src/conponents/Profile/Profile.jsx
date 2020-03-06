@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import s from './Profile.module.css';
-import MyPosts from './MyPosts/MyPosts';
+import MyPosts from './MyPosts/MyPosts.jsx';
+import ProfileInfo from './ProfileInfo/ProfileInfo.jsx';
 
-export default class Profile extends Component {
-    render() {
-        return (
-            <div>
-                <div>
-                    <img src='https://www.dw.com/image/48396304_303.jpg' alt='bcgrnd'/>
-                </div>
-                <div>
-                    ava + description
-                </div>
-        <MyPosts/>
-            </div>
-        )
-    }
+const Profile = () => {
+    return (
+        <div >
+            <ProfileInfo />
+            <MyPosts />
+        </div>
+    )
 }
+
+
+
+export default Profile;

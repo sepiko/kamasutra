@@ -6,19 +6,18 @@ export default class MyPosts extends Component {
     render() {
         return (
             <div>
-                <div>
-                    My posts
-                </div>
-                <div>
-                    new post
+                <div className={s.postsBlock}>
+                    <h3>My posts</h3>
                 </div>
                 <div>
                     <textarea></textarea>
+                </div>
+                <div>
                     <button>Add</button>
                 </div>
                 <div className={s.posts}>
-                    <Post message='Hi, my name is Bob'/>
-                    <Post message='I invite you to the party'/>
+                    <Post message='Hi, my name is Bob' />
+                    <Post message='I invite you to the party' />
                 </div>
             </div>
         )
