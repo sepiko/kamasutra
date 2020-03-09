@@ -2,25 +2,34 @@ import React, { Component } from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post/Post';
 
-export default class MyPosts extends Component {
-    render() {
-        return (
+const MyPosts = (props) => {
+
+    let posts = [
+        { id: 1, message: 'Hi,how are you?', likesCount: 12 },
+        { id: 2, message: 'It\'s my first post', likesCount: 11 },
+        { id: 3, message: 'It\'s my first post', likesCount: 11 }
+    ]
+
+    let postsElement = posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
+
+
+    return (
+        <div className={s.postsBlock}>
+            <h3>My posts</h3>
             <div>
-                <div className={s.postsBlock}>
-                    <h3>My posts</h3>
-                </div>
                 <div>
                     <textarea></textarea>
                 </div>
                 <div>
                     <button>Add</button>
                 </div>
-                <div className={s.posts}>
-                    <Post message='Hi, my name is Bob' />
-                    <Post message='I invite you to the party' />
-                </div>
             </div>
-        )
-    }
+            <div className={s.posts}>
+                {postsElement}
+            </div>
+        </div>
+    )
+
 }
 
+export default MyPosts;
