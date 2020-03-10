@@ -5,12 +5,12 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo.jsx";
 
 
 const Profile = props => {
-  return (
-    <div>
-      <ProfileInfo />
-      <MyPosts posts={props.posts} />
-    </div>
-  );
+    return (
+        <div>
+            <ProfileInfo />
+            <MyPosts posts={props.state.posts} />
+        </div>
+    );
 };
 
 export default Profile;
